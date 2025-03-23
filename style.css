@@ -1,0 +1,82 @@
+body {
+    background: radial-gradient(circle, #1a1a3d, #0d0d2b);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background: url('images/space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+h1 {
+    color: #00ccff;
+    text-shadow: 0px 0px 15px #00ccff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 50, 0.8);
+    box-shadow: 0px 0px 20px #00ccff;
+}
+
+#sudoku-board {
+    border-collapse: collapse;
+    background-color: #1a1a3d;
+    box-shadow: 0px 0px 20px #00ccff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#sudoku-board td {
+    border: 1px solid #00ccff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: linear-gradient(135deg, #26264c, #1a1a3d);
+    box-shadow: inset 0px 0px 10px #00ccff;
+    transition: 0.3s;
+}
+
+#sudoku-board td:hover {
+    background: #00ccff;
+    color: #1a1a3d;
+}
+
+#sudoku-board td:nth-child(3n) {
+    border-right: 2px solid #00ccff;
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 2px solid #00ccff;
+}
+
+button {
+    margin: 10px;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #26264c, #1a1a3d);
+    color: #00ccff;
+    border: 2px solid #00ccff;
+    box-shadow: 0px 0px 15px #00ccff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ccff;
+    color: #1a1a3d;
+    box-shadow: 0px 0px 25px #00ccff;
+    transform: scale(1.1);
+}
+
+
